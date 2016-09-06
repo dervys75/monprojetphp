@@ -1,5 +1,5 @@
 <?php
-define('SITE_NAME', 'Agence DreamSky');
+define('SITE_NAME', 'Agence RêveSud');
 define('HOME_PAGE_NAME', 'Accueil');
 
 $menu_data = array(
