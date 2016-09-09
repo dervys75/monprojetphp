@@ -2,7 +2,7 @@
 require_once (dirname(__FILE__).'/../defines.php');
 ?>
 
-<nav>
+<nav id="menu">
     <ul>
         <?php foreach ($menu_data as $label => $filename) { ?>
         <li>
