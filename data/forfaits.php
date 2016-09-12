@@ -8,6 +8,7 @@ function get_categories() {
     global $categories;
     return $categories;
 }
+
 function get_photo() {
     global $photo_categories;
     return $photo_categories;

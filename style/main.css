@@ -124,11 +124,9 @@ header {
  }
 
 .choix_forf {
+    position: relative;
     font-family: 'Pacifico', cursive;
     text-align: justify;
-    display: inline-block;
-    width: 30%;
-    height: 400px;
     padding: 10px;
     overflow: hidden;
 }
@@ -136,12 +134,10 @@ header {
     margin-left: 25%;
     padding: 20px;
 }
-.choix_forf figcaption {
-    padding: 10px;
-    text-decoration: underline;
-    color: crimson;
-}
+
 .choix_forf img {
+    display: inline-block;
+    width: 20%;
     border-radius: 10px 10px 10px 10px;
     -webkit-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);

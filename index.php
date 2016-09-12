@@ -2,7 +2,7 @@
 require_once(dirname(__FILE__) . '/defines.php');
 require_once(dirname(__FILE__) . '/data/forfaits.php');
 $photo_categories = get_photo();
-var_dump($photo_categories);
+//var_dump($photo_categories);
 //var_dump($_GET);
 ?>
 <?php
@@ -27,8 +27,7 @@ require_once('views/page_top.php');// Inclusion des defines
 //            var_dump($photo_categories[$categorie]);
             echo "<h2>$categorie</h2>";
             $file_name= IMG_PATH . $photo_categories[$categorie];
-            echo "<img src='$file_name'/>";
-            echo "<a href='catalog.php'>Nous Forfait</a>";
+            echo "<a href='catalog.php?categorie=$categorie'><img src='$file_name'/></a>";
         }; // foreach categorie
         ?>
     </div>

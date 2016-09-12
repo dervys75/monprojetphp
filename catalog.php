@@ -7,7 +7,7 @@ $categorie_page = false;
 if (array_key_exists('categorie', $_GET) && in_array($_GET['categorie'], get_categories())) {
     $categorie_page = $_GET['categorie'];
 }
-var_dump($_GET);
+//var_dump($categorie_page);
 ?>
 <?php
 require_once('views/page_top.php');// Inclusion des defines
@@ -18,7 +18,6 @@ require_once('views/page_top.php');// Inclusion des defines
     foreach (get_categories() as $categorie) { // por afiche les 3 categorie
         if (($categorie_page === false) || ($categorie_page === $categorie)) {
             echo "<h2>$categorie</h2>";
-
             foreach ($forfaits_data as $id => $forfait) {
                 // On affiche le forfait si il n'y a pas de categorie de page
                 // ou bien si le forfait appartient à la categorie demandée
@@ -27,8 +26,8 @@ require_once('views/page_top.php');// Inclusion des defines
                     <div class="forfait">
                         <h3><?= $forfait[FORF_NOM] ?></h3>
                         <p><?= $forfait[FORF_DESCRIPTION] ?></p>
-                        <p><img src="<?= IMG_PATH . $forfait[FORF_PHOTO2] ?>" alt=""/></p>
-                        <a href="reservation.php"><p>Reservez Ici.</p></a>
+                        <img src="<?= IMG_PATH . $forfait[FORF_PHOTO2] ?>" alt=""/>
+                        <a href="reservation.php?forfait=<?=$id?>">Reservez</a>;
                     </div>
                     <?php
                 } // if forfait
