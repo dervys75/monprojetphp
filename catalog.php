@@ -28,7 +28,7 @@ require_once('views/page_top.php');// Inclusion des defines
                         <h3><?= $forfait[FORF_NOM] ?></h3>
                         <p><?= $forfait[FORF_DESCRIPTION] ?></p>
                         <p><img src="<?= IMG_PATH . $forfait[FORF_PHOTO2] ?>" alt=""/></p>
-                        <a href="reservation.php"><img src="images/images.png"/></a>
+                        <a href="reservation.php"><p>Reservez Ici.</p></a>
                     </div>
                     <?php
                 } // if forfait
