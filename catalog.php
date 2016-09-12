@@ -12,7 +12,8 @@ var_dump($_GET);
 <?php
 require_once('views/page_top.php');// Inclusion des defines
 ?>
-<div id="wrapper">
+<div id="catalog">
+    <h1>Cataloge</h1>
     <?php
     foreach (get_categories() as $categorie) { // por afiche les 3 categorie
         if (($categorie_page === false) || ($categorie_page === $categorie)) {

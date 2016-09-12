@@ -31,8 +31,8 @@ if (array_key_exists('login', $_POST) && array_key_exists('username', $_POST) &&
 <?php if (!$user_is_logged) { ?>
     <form method="post" name="loginform" id="loginform"><!--Pas d'action : postback -->
         <div>
-            <label for="username">Pseudo :</label>
-            <input type="text" placeholder="votre pseudo" name="username" id="username">
+            <label for="username">Votre Pseudo :</label>
+            <input type="text" placeholder="votre pseudo" name="username" id="username"><br/>
             <label for="password">Mot de passe :</label>
             <input type="password" placeholder="votre mot de passe" name="password" id="password">
         </div>
