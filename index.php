@@ -21,13 +21,12 @@ require_once('views/page_top.php');// Inclusion des defines
             construction. Plusieurs versions sont apparues avec le temps, parfois par accident, souvent
             intentionnellement (histoire d'y rajouter de petits clins d'oeil, voire des phrases embarassantes).</p>
     </div>
-    <div id="choix_forf" class="choix_forf">
+    <div id="choix_forf">
         <?php
         foreach (get_categories() as $categorie) { // por afiche les 3 categorie
 //            var_dump($photo_categories[$categorie]);
-            echo "<h2>$categorie</h2>";
             $file_name= IMG_PATH . $photo_categories[$categorie];
-            echo "<a href='catalog.php?categorie=$categorie'><img src='$file_name'/></a>";
+            echo "<a href='catalog.php?categorie=$categorie'><h3>$categorie</h3><img src='$file_name'/></a>";
         }; // foreach categorie
         ?>
     </div>

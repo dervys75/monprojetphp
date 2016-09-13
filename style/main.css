@@ -116,12 +116,12 @@ header {
     font-size: 20px;
 }
 
-#choix_forf {
-    margin-left: 7%;
-    margin-top: 5%;
-    text-align: center;
+/*#choix_forf {*/
+    /*margin-left: 7%;*/
+    /*margin-top: 5%;*/
+    /*text-align: center;*/
 
- }
+ /*}*/
 
 .choix_forf {
     position: relative;
@@ -129,15 +129,22 @@ header {
     text-align: justify;
     padding: 10px;
     overflow: hidden;
+    display: inline-block;
+    width: 30%;
+
 }
-.choix_forf h3 {
-    margin-left: 25%;
+#choix_forf a {
+    display: inline-block;
+    width: 25%;
+    padding: 30px;
+
+}
+#choix_forf h3 {
     padding: 20px;
 }
-
-.choix_forf img {
+#choix_forf img {
     display: inline-block;
-    width: 20%;
+    width: 100%;
     border-radius: 10px 10px 10px 10px;
     -webkit-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
@@ -145,9 +152,12 @@ header {
 }
 
 #catalog {
+    margin-left: 5%;
     position: relative;
+    text-align: center;
+
     width: 90%;
-    height: auto;
+
 }
 #catalog h1 {
     text-align: left;
@@ -155,24 +165,31 @@ header {
     margin-left: 200px;
 }
 
-#catalog .forfait {
-    display: inline-block;
-    position: relative;
-    width: 245px;
-    text-align: center;
-    padding: 10px;
-}
 
- #catalog .forfait p img {
+ #catalog div {
      display: inline-block;
+     width: 20%;
+     margin: 10px;
+     padding: 10px;
+     text-align: center;
+
+ }
+
+#catalog h3 {
+    display: inline-block;
+    width: 20%;
+    margin: 10px ;
     text-align: center;
-     margin-left: 5px;
+
+}
+ #catalog div img {
+     width: 280px;
+     height: 180px;
      border-radius: 10px 10px 10px 10px;
      -webkit-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
      -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
      box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
  }
- #catalog .forfait
 
 #reservation fieldset {
     width: 60%;

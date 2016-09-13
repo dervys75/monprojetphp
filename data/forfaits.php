@@ -30,7 +30,7 @@ define('FORF_PHOTO2',       'photo2');
 $categories = array("Cuba", "Mexique", "Peru");
 $photo_categories = array(
     "Cuba" => 'images-modal/haba1.jpg',
-    "Mexique" => 'images-modal/iguada4.jpg',
+    "Mexique" => 'images-modal/canc2.jpg',
     "Peru" => 'images-modal/lamb3.jpg');
 
 $forfaits_data = array(

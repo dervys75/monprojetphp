@@ -19,23 +19,22 @@ require_once('views/page_top.php');// Inclusion des defines
         if (($categorie_page === false) || ($categorie_page === $categorie)) {
             echo "<h2>$categorie</h2>";
             foreach ($forfaits_data as $id => $forfait) {
-                // On affiche le forfait si il n'y a pas de categorie de page
-                // ou bien si le forfait appartient à la categorie demandée
+//                   afichamos el forfait por su categoria selecionada
                 if ($forfait[FORF_CATEGORY] == $categorie) {
                     ?>
-                    <div class="forfait">
-                        <h3><?= $forfait[FORF_NOM] ?></h3>
-                        <p><?= $forfait[FORF_DESCRIPTION] ?></p>
-                        <img src="<?= IMG_PATH . $forfait[FORF_PHOTO2] ?>" alt=""/>
-                        <a href="reservation.php?forfait=<?=$id?>">Reservez</a>;
-                    </div>
+<!--                    // afichamos todos los forfair si no hay categoria selecionada-->
+                        <div>
+                            <h3><?= $forfait[FORF_NOM] ?></h3>
+                            <img src="<?= IMG_PATH . $forfait[FORF_PHOTO2] ?>" alt=""/>
+                            <p><?= $forfait[FORF_DESCRIPTION] ?></p>
+                            <a href="reservation.php?forfait=<?=$id?>">Reservez</a>
+                        </div>
                     <?php
                 } // if forfait
             }; // foreach forfait
         }  // if categorie
-    }; // foreach categorie
+    }; // foreach categories
     ?>
-
 </div>
 <?php
 require_once('views/page_bottom.php');// Inclusion des defines
