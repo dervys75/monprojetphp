@@ -190,10 +190,19 @@ header {
      -moz-box-shadow: inset 0 0 19px 1px rgba(0,0,0,0.75);
      box-shadow: 0 0 19px 1px rgba(0,0,0,0.75);
  }
+#payment img {
+    border-radius: 10px 10px 10px 10px;
+}
 
-#reservation fieldset {
-    width: 60%;
-    height: 80%;
+#payment p {
+    padding: 10px;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#payment fieldset {
+    width: auto;
+    height: auto;
     margin: 3% 20%;
     font-family: 'Pacifico', cursive;
     font-size: 20px;
@@ -204,16 +213,31 @@ header {
     -moz-box-shadow:  0 0 1px 8px rgba(0,0,0,0.75);
     box-shadow:  0 0 8px 1px rgba(0,0,0,0.75);
 }
-#reservation legend {
+#payment legend {
     font-size: 30px;
 }
-#reservation li{
+#payment li{
     list-style: none;
     text-align: left;
     margin-left: 30%;
     margin-top: 3%;
-
 }
-#reservation input {
+
+#formulaire-reservation input.champ-invalide {
+    border-color: red;
+}
+
+#formulaire-reservation input.champ-invalide:after {
+       content: 'Champ invalide';
+}
+
+mark {
+    display: inline-block;
+    position: absolute;
+    margin-right: 40%;
+    margin-top: 15px;
+     font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    color: crimson;
 
 }

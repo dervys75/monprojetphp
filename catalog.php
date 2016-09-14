@@ -7,6 +7,7 @@ $categorie_page = false;
 if (array_key_exists('categorie', $_GET) && in_array($_GET['categorie'], get_categories())) {
     $categorie_page = $_GET['categorie'];
 }
+
 //var_dump($categorie_page);
 ?>
 <?php
@@ -39,6 +40,4 @@ require_once('views/page_top.php');// Inclusion des defines
 <?php
 require_once('views/page_bottom.php');// Inclusion des defines
 ?>
-
-
 
